@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Jade and Bootstrap Practice site</title>
     <meta charset="utf-8">
@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>SiteName</h2>
+        </div>
+        <ul style="margin-top:20px" class="col-md-8 list-inline text-right">
+          <li><a href="">
+              <div class="glyphicon glyphicon-envelope"> Newsletter</div></a></li>
+          <li><a href="">
+              <div class="glyphicon glyphicon-leaf"> RSS</div></a></li>
+          <li> |</li>
+          <li>
+            <form role="form" class="form-inline">
+              <div class="form-group">
+                <label class="sr-only">Email Adress</label>
+                <input type="email" placeholder="Enter Email" class="form-control">
+                <button type="submit" class="btn btn-default">Sign Up</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
