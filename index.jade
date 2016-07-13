@@ -6,12 +6,15 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+    link(rel="stylesheet", href="assets/css/main.css")
+    include assets/mixins/mixins
+    
 
   body
     .container
       .row
         .col-md-4
-          h2 SiteName
+          h1 SiteName
         ul.col-md-8.list-inline.text-right(style="margin-top:20px")
           li
             a(href=""): .glyphicon.glyphicon-envelope  Newsletter
@@ -34,4 +37,17 @@ html(lang="en")
           li: a(href="") Oil Paitings
           li: a(href="") Sculptures
           li: a(href="") Digital Drawings
-        
+      
+      
+      
+      .row.content-row
+      
+        .col-sm-5
+          include col-main
+          
+        .col-sm-4
+          include col-secondary
+          
+        .col-sm-3
+          include col-tertiary
+          
