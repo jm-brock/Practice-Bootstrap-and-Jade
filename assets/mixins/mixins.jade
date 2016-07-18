@@ -12,3 +12,12 @@ mixin tagblock()
         | , 
         a(href="")  lorem
         
+mixin mediaobject(title)
+  .media
+    .pull-left
+      a(href="")
+        img.img-circle.media-object(src="http://placehold.it/60x60" alt="...")
+    .media-body
+      h4.media-heading #{title} 
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      
